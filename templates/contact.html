@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Deedles Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #fefefe;
+        }
+        img.logo {
+            width: 180px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        form {
+            margin-top: 20px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .success-message {
+            background: #d4edda;
+            padding: 10px;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+        <img src="{{ url_for('static', filename='images/deedles_logo.png') }}"  class="logo">
+
+    <!-- Navigation -->
+    <nav style="background-color: #f8f9fa; padding: 15px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 10px;">
+        <a href="/" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">🏠 Home</a>
+        <a href="/gallery" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">📸 Gallery</a>
+        <a href="/contact" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">✉ Contact</a>
+        <a href="/reviews" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">🗨 Reviews</a>
+    </nav>
+
+    <h1>✉ Contact Us</h1>
+
+    <form method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</body>
+</html>

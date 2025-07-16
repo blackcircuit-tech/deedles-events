@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - Deedles Events</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+        }
+
+        img.logo {
+            width: 180px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #2c3e50;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 350px;
+            border-radius: 45px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Centered Logo --> 
+      
+    <img src="{{ url_for('static', filename='images/deedles_logo.png') }}"  class="logo">
+   
+      <!-- Centered Navigation Bar -->
+    <nav>
+        <a href="/">🏠 Home</a>
+        <a href="/gallery">📸 Gallery</a>
+        <a href="/contact">✉ Contact</a>
+        <a href="/reviews">🗨 Reviews</a>
+    </nav>
+
+    <!-- Gallery Heading -->
+    <h1>📸 Our Event Gallery</h1>
+
+    <!-- Gallery Images -->
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images/event1.jpg') }}" alt="Event 1">
+        <img src="{{ url_for('static', filename='images/event2.jpg') }}" alt="Event 2">
+        <img src="{{ url_for('static', filename='images/event3.jpg') }}" alt="Event 3">
+        <img src="{{ url_for('static', filename='images/event4.jpg') }}" alt="Event 4">
+        <img src="{{ url_for('static', filename='images/event5.jpg') }}" alt="Event 5">
+        <img src="{{ url_for('static', filename='images/event6.jpg') }}" alt="Event 6">
+        <img src="{{ url_for('static', filename='images/event7.jpg') }}" alt="Event 7">
+        <img src="{{ url_for('static', filename='images/event8.jpg') }}" alt="Event 8">
+        <img src="{{ url_for('static', filename='images/event9.jpg') }}" alt="Event 9">
+        <img src="{{ url_for('static', filename='images/event10.jpg') }}" alt="Event 10">
+        <img src="{{ url_for('static', filename='images/event11.jpg') }}" alt="Event 11">
+        <img src="{{ url_for('static', filename='images/event12.jpg') }}" alt="Event 12">
+        <img src="{{ url_for('static', filename='images/event13.jpg') }}" alt="Event 13">
+        <img src="{{ url_for('static', filename='images/event14.jpg') }}" alt="Event 14">
+        <img src="{{ url_for('static', filename='images/event15.jpg') }}" alt="Event 15">
+        <img src="{{ url_for('static', filename='images/event16.jpg') }}" alt="Event 16">
+        <img src="{{ url_for('static', filename='images/event17.jpg') }}" alt="Event 17">
+        <img src="{{ url_for('static', filename='images/event18.jpg') }}" alt="Event 18">
+        <img src="{{ url_for('static', filename='images/event19.jpg') }}" alt="Event 19">
+        <img src="{{ url_for('static', filename='images/event20.jpg') }}" alt="Event 20">
+        <img src="{{ url_for('static', filename='images/event21.jpg') }}" alt="Event 21">
+        <img src="{{ url_for('static', filename='images/event22.jpg') }}" alt="Event 22">
+        <img src="{{ url_for('static', filename='images/event23.jpg') }}" alt="Event 23">
+        <img src="{{ url_for('static', filename='images/event24.jpg') }}" alt="Event 24">
+        <img src="{{ url_for('static', filename='images/event25.jpg') }}" alt="Event 25">
+        <img src="{{ url_for('static', filename='images/event26.jpg') }}" alt="Event 26">
+        <img src="{{ url_for('static', filename='images/event27.jpg') }}" alt="Event 27">
+    </div>
+
+</body>
+</html>

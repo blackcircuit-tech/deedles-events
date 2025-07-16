@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Deedles Events and Hire</title>
+
+    <style>
+
+        body {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            background-color: #fefefe;
+
+            color: #333;
+
+            margin: 0;
+
+            padding: 20px;
+
+            line-height: 1.6;
+
+        }
+
+
+
+        header {
+
+            text-align: center;
+
+            padding-bottom: 20px;
+
+        }
+
+
+
+        img.logo {
+
+            width: 180px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        h1 {
+
+            color: #2c3e50;
+
+        }
+
+
+
+        p.tagline {
+
+            font-style: italic;
+
+            font-size: 1.2em;
+
+            color: #666;
+
+            margin-top: -10px;
+
+        }
+
+
+
+        .contact-info, .connect, .location, .history {
+
+            background-color: #f4f4f4;
+
+            padding: 15px 20px;
+
+            margin-top: 20px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 0 8px rgba(0,0,0,0.05);
+
+        }
+
+
+
+        nav {
+
+            margin-top: 20px;
+
+            text-align: center;
+
+        }
+
+
+
+        nav a {
+
+            margin: 0 12px;
+
+            text-decoration: none;
+
+            color: #007BFF;
+
+            font-weight: bold;
+
+        }
+
+
+
+        nav a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+
+        a {
+
+            color: #007BFF;
+
+        }
+
+
+
+        hr {
+
+            margin-top: 40px;
+
+            border: none;
+
+            border-top: 1px solid #ddd;
+
+        }
+
+
+
+        .connect ul {
+
+            list-style: none;
+
+            padding-left: 0;
+
+        }
+
+
+
+        .connect ul li {
+
+            margin-bottom: 8px;
+
+        }
+
+
+
+        .history {
+
+            background-color: #fffdf6;
+
+            border-left: 5px solid #f39c12;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav style="background-color: #f8f9fa; padding: 15px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.1); border-radius: 10px;">
+
+    <a href="/" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">🏠 Home</a>
+
+    <a href="/gallery" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">📸 Gallery</a>
+
+    <a href="/contact" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">✉ Contact</a>
+
+    <a href="/reviews" style="margin: 0 20px; text-decoration: none; color: #2c3e50; font-weight: bold;">🗨 Reviews</a>
+
+
+
+</nav>
+
+
+
+    <header>
+
+        <!-- Logo -->
+
+        <img src="{{ url_for('static', filename='images/deedles_logo.png') }}"  class="logo">
+
+
+
+        <!-- Welcome Message -->
+         
+
+        <h1>Welcome to Deedles Events and Hire</h1>
+
+        <p class="tagline">
+
+            ✨ Turning ordinary events into unforgettable moments of style and elegance ✨
+
+        </p>
+
+    </header>
+
+
+
+    <!-- 📖 Our Story Section -->
+
+    <div class="history">
+
+        <h2>📖 Our Story</h2>
+
+        <p>
+
+            From humble beginnings in Avondale, Deedles Events and Hire was founded by <strong>Patricia Mwansa</strong>, alongside co-founders <strong>Damian Katungu</strong> (husband) and <strong>Florina Katungu</strong> (daughter).
+
+            What started as a passion for decorating family celebrations soon blossomed into a growing event styling brand.
+
+        </p>
+
+        <p>
+
+            Over the years, Deedles has proudly worked with organisations of high caliber, including <strong>UNZALARU</strong>, <strong>ZAMBIA AIR FORCE</strong>, and <strong>DRUG ENFORCEMENT  COMMISSION</strong>,
+
+            and was even featured on the Zambian hit TV show <strong>Our Perfect Wedding Zambia</strong>.
+
+        </p>
+
+        <p>
+
+            Today, Deedles is quickly gaining momentum as one of Lusaka’s most trusted names in event design and décor.
+
+            With a commitment to creativity, excellence, and personal service, we continue to turn ordinary events into unforgettable celebrations — one elegant detail at a time.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- Mum's Contact Info -->
+
+    <div class="contact-info">
+
+        <h2>📞 Contact Us</h2>
+
+        <ul>
+
+            <li><strong>Phone:</strong> 0979686069</li>
+
+            <li><strong>Email:</strong> mwansapatricia381@gmail.com</li>
+
+            <li><strong>Facebook:</strong> Patricia Mwansa</li>
+
+            <li><strong>Instagram:</strong> Deedles Events</li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="/gallery">📸 Gallery</a>
+
+        <a href="/contact">✉ Contact</a>
+
+        <a href="/reviews">🗨 Reviews</a>
+
+    </nav>
+
+
+
+    <!-- Social Media Links -->
+
+    <div class="connect">
+
+        <h2>🌐 Connect with Us Directly to Our Links</h2>
+
+        <ul>
+
+            <li><a href="https://www.facebook.com/share/16eoMiK6G6/" target="_blank">📘 Facebook Profile</a></li>
+
+            <li><a href="https://instagram.com/deedles_events" target="_blank">📸 Instagram Profile</a></li>
+
+            <li><a href="https://tiktok.com/@florinakm44" target="_blank">🎵 TikTok</a></li>
+
+            <li><a href="https://wa.me/260979686069" target="_blank">💬📲 WhatsApp</a></li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- Location -->
+
+    <div class="location">
+
+        <h2>📍 Our Location</h2>
+
+        <p>Plot 6269, Libala Stage 4A, Lusaka, Zambia</p>
+
+    </div>
